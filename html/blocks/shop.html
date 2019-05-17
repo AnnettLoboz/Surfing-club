@@ -1,4 +1,5 @@
 <section class="shop">
+
     <div class="conteiner">
         <h2 class="title">
             <span class="subtitle">Shop</span>
@@ -6,12 +7,15 @@
         </h2>
     </div>
 
-        <div class="shop-slider">
-            @@include('shop-items/slide-item-01.html')
-            @@include('shop-items/slide-item-01.html')
-            @@include('shop-items/slide-item-01.html')
-
+    <div class="conteiner shop-slider-wrapper">
+        <div class="shop-slider-special-holder">
+            <div id="shopSlider" class="owl-carousel">
+                @@include('shop-items/item-01.html')
+                @@include('shop-items/item-02.html')
+                @@include('shop-items/item-03.html')
+            </div>
         </div>
+    </div>
 
     <div class="conteiner">
         <div class="shop-link-wrapper">
