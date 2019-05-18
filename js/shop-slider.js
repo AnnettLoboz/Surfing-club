@@ -5,28 +5,24 @@ $(document).ready(function(){
         items: 3,
         // loop: true,
         dots: false,
+        margin: 2,
         smartSpeed: 500,
+    });
+
+
+    $('#shopSiderLeft').click(function() {
+        console.log('Left');
+        shopSlider.trigger('prev.owl.carousel');
+    })
+
+    $('#shopSiderRight').click(function() {
+        console.log('Right');
+        shopSlider.trigger('next.owl.carousel');
     });
 
 });
 
-    // headerSlider.on('initialized.owl.carousel', function(event){
-    //     $('.slide-controls-number__active').text(event.item.index +1);
-    //     $('.slide-controls-number__total').text(event.item.count)
-    // });
 
-    //
-    //
-    //
-    // $('#headerSliderLeft').click(function() {
-    //     console.log('Left');
-    //     headerSlider.trigger('prev.owl.carousel');
-    // })
-    //
-    // $('#headerSliderRight').click(function() {
-    //     console.log('Right');
-    //     headerSlider.trigger('next.owl.carousel');
-    // });
     // headerSlider.on('changed.owl.carousel', function(event){
     //     $('.slide-controls-number__active').text(event.item.index +1);
     //     $('.slide-controls-number__total').text(event.item.count)
