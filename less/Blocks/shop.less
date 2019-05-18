@@ -1,0 +1,152 @@
+.shop{
+  padding-top: 95px;
+  padding-bottom: 110px;
+  position: relative;
+  &:before{
+    position: absolute;
+    content: "";
+    top: -330px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 984px;
+    z-index: -1;
+    background-image:  url("../img/bg/bg-lines.png"), url('../img/bg/bg-water.jpg');
+    background-repeat: repeat-y, no-repeat;
+    background-position: center, center;
+    background-size:auto, cover;
+  }
+}
+
+.shop-slider-wrapper{
+  height: 565px;
+  margin-bottom: 50px;
+  position: relative;
+
+}
+
+.shop-slider-special-holder{
+  position: absolute;
+  left: 0;
+  right: +85px;
+  margin-bottom: 50px;
+}
+
+.shop-slider{
+  margin-top: 50px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shopSlider-controls{
+  position: relative;
+}
+
+.shopSlider-arrow{
+  width: 40px;
+  height: 48px;
+  padding: 15px;
+  position: absolute;
+  bottom: calc(40px + 80px);
+  z-index: 9;
+  cursor: pointer;
+
+  img{
+    vertical-align: top;
+  }
+}
+
+.shopSlider-arrow--left{
+  left: -70px;
+  transform: translate(-100%, -100%);
+}
+
+.shopSlider-arrow--right{
+  right: -70px;
+  transform: translate(100%, -100%);
+ }
+
+.board{
+  position: relative;
+  width: 435px;
+  height: 435px;
+  margin-top: 130px;
+  //margin-right: 85px;
+}
+
+.bord__img-holder{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  height: 320px;
+  background-color: #ececec;
+}
+
+
+.board__img{
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+}
+.shop-link-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.board-desc{
+  width: 200px;
+  position: absolute;
+  top: 196px;
+  left: 216px;
+}
+
+.board__cat{
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(122, 122, 122);
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2.4px;
+
+}
+
+.board__title{
+  font-size: 24px;
+  font-family:  'Playfair Display', serif;
+  color: rgb(51, 51, 51);
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 0.26px;
+}
+
+.board-buy{
+  margin-top: 38px;
+  margin-left: 55px;
+}
+
+
+.board-buy__price{
+  font-size: 20px;
+  font-family:  'Poppins', sans-serif;
+  color: rgb(206, 96, 168);
+  line-height: 1.2;
+  font-weight: 300;
+  letter-spacing: -0.1px;
+  margin-bottom: 3px;
+}
+
+.board-buy__link{
+  font-size: 9px;
+  font-family: 'League Spartan', sans-serif;
+  color: rgb(51, 51, 51);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 5.4px;
+  margin-left: 4px;
+}
