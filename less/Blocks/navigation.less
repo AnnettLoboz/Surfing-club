@@ -1,23 +1,31 @@
-.navigation-wrapper{
+.navigation-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  font-family:League Spartan, sans-serif;
-  font-weight: 700;
+  //font-family:League Spartan, sans-serif;
+  //font-weight: 700;
 
-
-  @media(min-width: 1254px) {
-    display: flex;
+  @media (min-width: 1254px) {
     flex-direction: row;
-    height: 128px;
     align-items: center;
+    height: 128px;
 
   }
 }
 
 .nav-logo-wrapper{
-  margin-right: 190px;
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media (min-width: 1254px){
+    margin-right: 190px;
+    padding-bottom: 0;
+    padding-top: 0;
+    width: auto;
+  }
 }
 
 .navigation{
