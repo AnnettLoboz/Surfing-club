@@ -7,11 +7,6 @@ body{
   padding-bottom:150px;
 }
 
-.flex-end{
-  display: flex;
-  justify-content: flex-end;
-}
-
 .flex-column-center{
   display: flex;
   flex-direction: column;
@@ -19,15 +14,27 @@ body{
 }
 
 .conteiner {
-  width: 1224px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  padding-left:15px;
+  padding-right: 15px;
+  position: relative;
   //height: 700px;
-  position: relative;
-  }
 
+  @media (min-width: 1254px){
+    width: 1224px;
+    padding-left: 50px;
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+ }
+
+.flex-end{
+  display: flex;
+  justify-content: flex-end;
+}
 .relative{
-  position: relative;
+  //position: relative;
 }
 
 .read-more-link, a.read-more-link {
